@@ -1,0 +1,103 @@
+.footer{
+    height: 50vh;
+    width: 100vw;
+    transform: translateY(4rem);
+    display: grid;
+    background-color: black;
+    grid-template-columns:5% 20% 15% 15% 40% 5%;
+    grid-template-rows: 2rem 1fr 2rem;
+    grid-template-areas: 
+                         ". . . . . ."
+                         ". part1 part2 part3 part4 ."
+                         ". . . . . .";
+    justify-items: center;
+    align-items: center;
+}
+
+.part1{
+    grid-area: part1;
+    align-self: start;
+
+    p{
+        font-size: 2rem;
+        color: white;
+    }
+
+    img{
+        height: 2rem;
+        padding: .5rem;
+    }
+}
+
+.part2{
+    grid-area: part2;
+
+    p{
+        color: gray;
+        font-size: 1rem;
+    }
+
+    a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 1rem;
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+}
+
+.part3{
+    grid-area: part3;
+    transform: translateY(1.2rem);
+
+    p{
+        color: gray;
+        font-size: 1rem;
+    }
+
+    a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 1rem;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+.part4{
+    grid-area: part4;
+
+    p{
+        color: gray;
+        font-size: 1rem;
+    }
+
+    input{
+        width: 90%;
+        display: inline-block;
+        background-color: black;
+        color: white;
+      //  height: 90%;
+       border-top: black 0rem solid;
+       border-right: black 0rem solid;
+       border-left: black 0rem solid;
+       border-bottom: gray .2rem solid;
+
+       &::placeholder{
+           font-size: .9rem;
+           padding: 1rem 1rem;
+       }
+       
+    }
+
+    a{
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        color: white;
+        margin-top: 2rem;
+        padding: 1rem 1.3rem;
+        background-color: red;
+    }
+}

@@ -1,0 +1,128 @@
+.quicklook{
+    height: auto;
+    width: 100vw;
+  //  background-color: $bgcolor3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5rem 5rem 3rem 3rem 3rem 3rem 1fr;
+    grid-template-areas: "."
+                        "heading4"
+                        "."
+                        "quicklook-list"
+                        "quicklook-list"
+                        "."
+                        "details";
+}
+
+.heading4{
+    grid-area: heading4;
+    font-size: 2.5rem;
+    justify-self: center;
+    align-self: center;
+    color: $main1;
+
+    &-2{
+        grid-area: heading4;
+        font-size: 1.2rem;
+        justify-self: center;
+        align-self: center;
+        color: $main3;
+        transform: translateY(2.2rem);
+    }
+}
+
+.quicklook-list{
+    grid-area: quicklook-list;
+    display: grid;
+    grid-template-columns: repeat(9,max-content);
+    grid-template-rows: 50% 50%;
+    
+
+    p{
+        font-size: 1.5rem;
+        display: inline-block;
+        align-self: center;
+        justify-self: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: .4rem;
+        border-radius: 10%;
+    }
+    &-1{
+        grid-row: 1/2;
+        
+    }
+    &-2{
+        grid-row: 2/3;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.agri,.anim,.arch,.arts,.avia,.dent,.desi,.engi,.law,.mana,.mass,.medi,.phar,.scie{
+    background-color: $main2;
+    color: white;
+    border: black .12rem solid;
+}
+
+.colorme{
+    color: $main2;
+    background-color: $bgcolor2;
+    border: none;
+}
+
+.details-of-quick-look{
+    grid-area: details;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "GRADUATION GRADUATION_LIST"
+                         "POSTGRADUATION POSTGRADUATION_LIST"
+                         "THIRD THIRD_LIST";
+}
+
+.set_font{
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 0rem 1rem 0rem;
+    width: 95%;
+    text-align: center;
+    border: .1rem solid black;
+}
+.set_font2{
+    font-size: 1.03rem;
+    padding: 1rem;
+    width: 90%;
+    text-align: center;
+    border: .1rem solid black;
+}
+
+
+.GRADUATION{
+    grid-area:  GRADUATION;
+    
+}
+.GRADUATION_LIST{
+    grid-area:  GRADUATION_LIST;
+}
+.POSTGRADUATION{
+    grid-area:  POSTGRADUATION;
+
+}
+.POSTGRADUATION_LIST{
+    grid-area: POSTGRADUATION_LIST;
+}
+.THIRD{
+    grid-area: THIRD;
+    
+}
+.THIRD_LIST{
+    grid-area: THIRD_LIST;
+    
+}
+
+
+
+
+

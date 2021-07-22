@@ -1,0 +1,387 @@
+.selected-clg-site{
+    height: max-content;
+    width: 100vw;
+    display: grid;
+    background-color: $bgcolor3;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 27rem 3.5rem 1fr 5rem;
+    grid-template-areas: 
+                         "header-selected header-selected"
+                         "clg-sections clg-sections"
+                         "rest-selected rest-selected"
+                         " . . ";
+}
+
+.header-selected{
+    grid-area: header-selected;
+    transform: translateY(-3rem);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(6,16%);
+    grid-template-areas: 
+                            ". ."
+                            ". ."
+                            " selected-rating selected-rating"
+                            "selected-apply selected-apply"
+                            "selected-claim selected-claim"
+                            "selected-clg-details selected-clg-details ";
+   // background-image: linear-gradient(black , black);
+
+   
+}
+
+
+.selected-clg-details{
+    grid-area: selected-clg-details;
+    z-index: 2;
+    transform: translateY(-2rem);
+    p{
+        font-size: 2.5rem;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.301));
+
+        img{
+            height: 1.2rem;
+            width: auto;
+        }
+
+        span{
+            font-size: 1.2rem;
+            padding-right: 2rem;
+        }
+    }
+}
+
+
+
+.selected-main-photo{
+    //z-index: 1;
+  //  display: none;
+
+   img{
+    filter: brightness(20%);
+    clip-path: polygon(0% 10% , 100% 10% , 100% 70% , 0% 70%) ;
+    width: 100vw;
+   }
+  
+}
+
+.selected-rating{
+    grid-area: selected-rating;
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 2;
+    text-align: right;
+    margin-right: 3rem;
+    margin-top: 10rem;
+    transform: translateY(-2rem);
+
+    img{
+        height: 1.2rem;
+    }
+}
+
+.selected-apply{
+    grid-area: selected-apply;
+    z-index: 2;
+    margin-top: 3.5rem;
+    transform: translateY(-1rem);
+    margin-left: .2rem;
+    height: .7rem;
+    a{
+        text-decoration: none;
+        color: white;
+        padding: .5rem;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        background-color: $main5;
+    }
+}
+
+.selected-claim{
+    grid-area: selected-claim;
+    z-index: 2;
+    margin-top: 3.5rem;
+    transform: translateY(-1rem);
+    span{
+        color: white;
+        font-size: 1.2rem;
+        margin-left: .2rem;
+        img{
+            height: .7rem;
+        }
+    }
+}
+
+
+
+
+
+
+.clg-sections{
+    grid-area: clg-sections;
+    display: grid;
+    grid-template-columns: repeat(13,max-content);
+    background-color: white;
+    justify-content: center;
+    border-radius: 20%;
+    z-index: 99;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    div{
+        text-decoration: none;
+        display: inline-block;
+        align-self: center;
+        color: black;
+        font-size: 1.1rem;
+        padding: .4rem;
+        border: black .1rem solid;
+    }
+
+    
+}
+
+.rest-selected{
+    grid-area: rest-selected;
+    margin-top: 2rem;
+}
+
+#clg-sections-info{
+    background-color: $main5;
+}
+
+
+.selected-information{
+  //  display: none;
+    font-size: 1.4rem;
+    width: 90%;
+   // text-align: center;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+   // transform: rotate(5deg);
+    border-radius: 10%;
+
+    span{
+        transform: rotate(-5deg);
+        color: $main5;
+        font-weight: 600;
+    }
+
+    a{
+       // text-decoration: none;
+       display: inline-block;
+        background-color: $main5;
+        color: white;
+        padding: 1rem;
+        border-radius: 50%;
+        margin-left: 10rem;
+
+        &:hover{
+            transform: translateY(-.3rem) scale(1.05);
+        }
+    }
+}
+
+
+
+.selected-course-fees{
+    display: grid;
+    display: none;
+    width: 90%;
+    //text-align: center;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15%;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: 2rem max-content;
+    grid-template-areas: 
+                         "selected-course selected-course selected-course"
+                         "selected-streams selected-seats selected-fee-struct";
+
+    align-items: center;
+    //justify-items: center;
+}
+
+.selected-course{
+    grid-area: selected-course;
+    text-align: center;
+    color: white;
+    background-color: $main2;
+    font-size: 1.3rem;
+    height: 2rem;
+    //margin: auto;
+    //justify-self: center;
+   // align-items: center;
+}
+
+.selected-streams{
+    grid-area: selected-streams;
+    
+    div{
+        font-size: 1.2rem;
+        padding: .5rem;
+        border: black .05rem solid;
+        text-align: center;
+    }
+}
+
+.selected-seats{
+    grid-area: selected-seats;
+
+    div{
+        font-size: 1.2rem;
+        padding: .5rem;
+        border: black .05rem solid;
+        text-align: center;
+    }
+}
+
+.selected-fee-struct{
+    grid-area: selected-fee-struct;
+
+    div{
+        font-size: 1.2rem;
+        padding: .5rem;
+        border: black .05rem solid;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+.selected-admission{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    display: none;
+    padding: 2rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2,max-content);
+    grid-template-areas: 
+                            "p p "
+                            "selected-adm-type selected-adm-date";
+
+    background-color: white;
+    border-radius: 10%;
+
+    p{
+        grid-area: p;
+        font-size: 1.2rem;
+    }
+}
+
+.selected-adm-type{
+    grid-area: selected-adm-type;
+    transform: translateX(10.1rem);
+    div{
+        font-size: 1.1rem;
+        color: $main2;
+        text-align: center;
+        padding: .5rem;
+        border: black .05rem solid;
+        width: 70%;
+    }
+
+    div:nth-child(2n){
+        background-color: $bgcolor3;
+    }
+}
+
+.selected-adm-date{
+    grid-area: selected-adm-date;
+
+    div{
+        font-size: 1.1rem;
+        color: $main1;
+        text-align: center;
+        padding: .5rem;
+        border: black .05rem solid;
+        width: 70%;
+    }
+
+    div:nth-child(2n){
+        background-color: $bgcolor3;
+    }
+}
+
+
+
+
+
+
+.selected-cutoff{
+    display: grid;
+    display: none;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2rem 4rem max-content;
+    grid-template-areas: "p p"
+                        ". ."
+                         "selected-cutoff-stream selected-cutoff-caste";
+
+    p{
+        grid-area: p;
+       // display: inline-block;
+        font-size: 1.2rem;
+        margin-top: 4rem;
+        margin-left: 3rem;
+        border: green .2rem solid;
+        padding: .5rem;
+        border-radius: 20%;
+        justify-self: start;
+        align-self: center;
+    }
+}
+
+.selected-cutoff-stream{
+    grid-area: selected-cutoff-stream;
+    width: 70%;
+    transform: translateX(7rem);
+    text-align: center;
+
+    :nth-child(1){
+        background-color: $main2;
+        color: white;}
+
+
+    div{
+        font-size: 1.2rem;
+        padding: .8rem;
+        border: black .1rem solid;
+        }
+    
+}
+
+.selected-cutoff-caste{
+    grid-area: selected-cutoff-caste;
+    display: grid;
+    grid-template-columns: repeat(5,30%);
+    overflow: scroll;
+    transform: translateX(-4.0rem);
+    text-align: center;
+
+    div{
+        div{
+            font-size: 1.2rem;
+        padding: .8rem;
+        border: black .1rem solid;
+        }
+
+        :nth-child(1){
+            background-color: $main2;
+            color: white;}
+    }
+}

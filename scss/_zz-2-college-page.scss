@@ -1,0 +1,213 @@
+.college-selection{
+    height: auto;
+    width: 100vw;
+    background-color: $bgcolor3;
+
+    display: grid;
+    grid-template-columns: .2rem 1fr 4fr 2rem;
+    grid-template-rows: 1rem max-content .5fr .5fr max-content 2rem;
+    grid-template-areas: ". . . ."
+                         ". heading2-1 heading2-1 ."
+                         ". sidebar-course clg_show_list ."
+                         ". sidebar-course clg_show_list ."
+                         ". sidebar-course clg_show_list ."
+                         ". . . .";
+    grid-gap: 2rem;
+}
+
+
+.heading2-1{
+    grid-area: heading2-1;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.basic-heading{
+    font-size: 2.5rem;
+    text-align: center;
+    color: $main1;
+    span{
+        font-size: 1.5rem;
+        color: $main2;
+    }
+}
+
+.engi_heading, .anim_heading , .agri_heading , .tour_heading{
+    display: none;
+    margin-left: 1rem;
+    &1{
+        font-size: 2rem;
+        color: $main1;
+    }
+
+    &2{
+        font-size: 1.5rem;
+        color: $main5;
+        transform: translateY(-1rem);
+    }
+
+    span{
+        color: red;
+    }
+}
+
+
+.sidebar-course{
+    grid-area: sidebar-course;
+    background-color: white;
+    border-radius: 5%;
+    overflow: scroll;
+
+    p{
+        text-align: center;
+        color: $bgcolor2;
+        font-size: 1.3rem;
+    }
+    
+    label{
+        display: inline-block;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+}
+
+.clg_show_list{
+    grid-area: clg_show_list;
+}
+
+.sidebar_agri,.sidebar_anim,.sidebar_arch,.sidebar_arts,.sidebar_avia,.sidebar_dent,.sidebar_engi,.sidebar_scie,.sidebar_tour{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap:2rem
+}
+
+.one_clg{
+    text-decoration: none;
+    img{
+        height: 13rem;
+        width: 25rem; 
+        border-radius: 5%; 
+        box-shadow: 0rem 0rem 1rem black; 
+    }
+    p{
+        font-size: 1.4rem;
+        width: 96.5%;
+        text-align: center;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.589) , rgb(223, 150, 14));
+        border-radius: 5%;
+        transform: translateY(-4rem);
+        box-shadow: 0rem 0rem 1rem black;
+
+        span{
+            font-size: 1rem;
+            border-radius: 5%;
+            
+        }
+    }
+    
+}
+
+
+
+
+// .sidebar-stream{
+//     grid-area: sidebar-stream;
+//     background-color: white;
+//     border-radius: 5%;
+//     overflow: scroll;
+
+//     p{
+//         text-align: center;
+//         color: $bgcolor2;
+//         font-size: 1.3rem;
+//     }
+// }
+
+// .engi-stream , .agri-stream, .anim-stream, .tour-stream{
+//     display: none;
+//     label{
+//         display: inline-block;
+//         font-size: 1rem;
+//         margin-bottom: .5rem;
+//     }
+// }
+
+
+
+
+
+// .sidebar-substream{
+//     grid-area: sidebar-substream;
+//     background-color: white;
+//     border-radius: 5%;
+
+//     p{
+//         text-align: center;
+//         color: $bgcolor2;
+//         font-size: 1.3rem;
+//     }
+// }
+
+// .engi-substream , .agri-substream , .anim-substream , .tour-substream{
+
+//     display: none;
+
+//     label{
+//         display: inline-block;
+//         font-size: 1rem;
+//         margin-bottom: .5rem;
+//     }
+// }
+
+
+
+// .clg-show-list{
+//     grid-area: clg-show-list;
+//     background-color: white;
+//     border-radius: 5%;
+    
+// }
+
+// .engi-colleges , .agri-colleges , .anim-colleges , .tour-colleges {
+//     display: grid;
+//     grid-template-columns: repeat(2,50%);
+//     grid-row-gap: 3rem;
+//     text-align: center;
+//     display: none;
+
+//     a{
+//         display: inline-block;
+//         text-decoration: none;
+//         background-color: rgb(219, 218, 218);
+//         border-radius: 5%;
+//         margin-top: 2rem;
+//         padding-top: 1rem;
+//        // padding-bottom: 0rem;
+//         padding-right: 1rem;
+//         padding-left: 1rem;
+
+//         &:hover{
+//             transform: translateY(-1rem) scale(1.05);
+//         }
+        
+       
+//         img{
+//             height: 13rem;
+//             width: 25rem;
+//         }
+
+//         div{
+//            // transform: translateY(-3rem);
+//             font-size: 1.05rem;
+//             color: white;
+//             background-image: linear-gradient(rgba(0, 0, 0, 0.589) ,black);
+//             border-radius: 5%;
+//         }
+//     }
+// }
+
+
+
+

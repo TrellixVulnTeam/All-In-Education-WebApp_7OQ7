@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+body{
+    overflow: hidden;
+    position: absolute;
+}
+.header {
+  grid-area: header;
+  width: 100vw;
+  display: grid;
+  background-color: rgba(128,128,128, 0.212);
+  grid-template-columns: 1fr 7rem repeat(7, 1fr);
+  grid-template-areas: "logo .  hi hi hi hi hi hi hi";
+  z-index: 44; }
+
+.logo {
+  grid-area: logo; }
+  .logo a img {
+    height: 3.5rem;
+    width: auto;
+    margin-left: 2rem; }
+
+.header-items {
+  grid-area: hi;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  transition: all 2s ease; }
+  .header-items a {
+    color: #003d00;
+    text-decoration: none;
+    font-size: 1.3rem;
+    justify-self: center;
+    align-self: center; }
+    .header-items a:hover {
+      color: #fdb225;
+      transform: scale(1.1); }
+
+.applyForClg{
+    background-image:url('img/bg-image.jpg') ;
+    height: 100vh;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.applyForClgTitle{
+   display: inline-block;
+   background-color: rgba(255,255,255,.6);
+   border-radius: 10%;
+   position: relative;
+   padding: 2rem;
+   top: 20%;
+   color: rgb(0, 0, 95);
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+.applyForClgTitle span{
+    color:  rgb(0, 61, 0);
+    font-size: 2rem;
+}
+.applyForClgTitle a{
+	 display: inline-block;
+	 font-size: 2rem;
+	 padding: 1rem 1rem;
+     text-decoration: none;
+	 border-radius: 40%;
+	 color: white;
+	 background-color:rgb(223, 150, 14);
+}
+.applyForClgTitle a:hover{
+    transform: translateY(-.5rem);
+    box-shadow: .5rem .5rem .5rem black;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="main-page.html"><img src="img/icons/logo-b.svg" alt="logo"></a>
+        </div>
+        <div class="header-items">
+            <a href="pick-course.html" id="header-engi" >Engineering</a>
+            <a href="pick-course.html">Medical</a>
+            <a href="pick-course.html">Business</a>
+            <a href="pick-course.html">Law</a>
+            <a href="pick-course.html">Design</a>
+            <a href="pick-course.html">Science</a>
+        </div>
+    </header>
+
+    <div class="applyForClg">
+        <div class="applyForClgTitle">
+            <span>Welcome to All-In Education</span><br> <br>
+            Click on Application to fill out your application. <br> Your application will 
+            also serve as your resume. <br><br>
+            <a href="application.html">Click</a>
+        </div>
+    </div>
+</body>
+</html>

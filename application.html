@@ -1,0 +1,543 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Document</title>
+
+    <style>
+
+.logo a img {
+    height: 3.5rem;
+    width: auto;
+    margin-left: 2rem; }
+.header {
+	 grid-area: header;
+	 width: 100vw;
+	 display: grid;
+	 background-color:  rgba(128,128,128, 0.212);
+	 grid-template-columns: 1fr 7rem repeat(7, 1fr);
+	 grid-template-areas: "logo . hi hi hi hi hi hi hi";
+	 z-index: 44;
+}
+ .logo {
+	 grid-area: logo;
+}
+ .logo a img {
+	 height: 3.5rem;
+	 width: auto;
+	 margin-left: 2rem;
+}
+ .header-items {
+	 grid-area: hi;
+	 display: grid;
+	 grid-template-columns: repeat(7, 1fr);
+	 transition: all 2s ease;
+}
+ .header-items a {
+	 color: #003d00;
+	 text-decoration: none;
+	 font-size: 1.3rem;
+	 justify-self: center;
+	 align-self: center;
+}
+ .header-items a:hover {
+	 color: #fdb225;
+	 transform: scale(1.1);
+}
+ .login-signup {
+	 margin-right: 1.5rem;
+	 color: #003d00;
+	 background-color: #fdb225;
+	 text-decoration: none;
+	 font-size: 1.3rem;
+	 padding: 1rem 1.3rem;
+	 border-radius: 5%;
+	 justify-self: center;
+	 align-self: center;
+}
+ .login-signup:hover {
+	 color: white;
+	 background-color: #00005f;
+}
+ 
+.application-form {
+	 height: 300vh;
+	 width: 100vw;
+	 border: 1rem double solid;
+	 display: grid;
+	 grid-template-columns: 5rem 2fr 1fr 5rem;
+	 grid-template-rows: 3.5rem 5rem 4rem 1fr 3rem 2fr 3rem 1fr 5rem 8rem;
+	 grid-template-areas: ". . . ." ". heading8 heading8 ." ". . . ." ". student-details student-details ." ". . . ." ". qualifications qualifications ." ". . . ." ". apply-course-details apply-course-details ." ". . . ." ". save-details save-details ." ". . . .";
+}
+ .heading8 {
+	 grid-area: heading8;
+}
+ .heading8 div {
+	 font-size: 3rem;
+	 color: #00005f;
+	 text-align: center;
+}
+ .heading8 p {
+	 font-size: 1.2rem;
+	 text-align: center;
+	 color: #616161;
+	 padding-bottom: 1rem;
+	 border-bottom: gray 0.1rem solid;
+}
+ .student-details {
+	 grid-area: student-details;
+	 width: 100%;
+	 display: grid;
+	 grid-template-columns: 1fr 2fr;
+	 grid-template-rows: 3rem 1fr;
+	 grid-template-areas: "title1-1 title1-1" "label1 input1";
+}
+ .student-details input {
+	 border-top: white 0rem solid;
+	 border-left: white 0rem solid;
+	 border-right: white 0rem solid;
+	 border-bottom: gray 0.1rem solid;
+	 color: black;
+}
+ .title1-1 {
+	 grid-area: title1-1;
+	 display: block;
+	 text-align: center;
+	 font-size: 2rem;
+	 font-weight: 600;
+	 margin-bottom: 1rem;
+	 border-bottom: gray 0.1rem solid;
+}
+ .label1 {
+	 grid-area: label1;
+}
+ .label1 label {
+	 font-size: 1.1rem;
+	 display: inline-block;
+	 margin-left: 8rem;
+	 margin-bottom: 2rem;
+}
+ .input1 {
+	 grid-area: input1;
+}
+ .input1 input {
+	 display: inline-block;
+	 margin-left: 4rem;
+	 margin-bottom: 2.2rem;
+}
+ .input1 label {
+	 font-size: 1rem;
+}
+ .qualifications {
+	 grid-area: qualifications;
+	 display: grid;
+	 grid-template-columns: 1fr 2fr;
+	 grid-template-rows: 3rem 3rem 3rem 2rem 1fr 3rem 2rem 1fr 3rem 2rem 1fr 3rem 2rem 1fr;
+	 grid-template-areas: ". ." "title1-2 title1-2" "title2-1 title2-1" ". ." "label2 input2" "title2-2 title2-2" ". ." "label3 input3" "title2-3 title2-3" ". ." "label4 input4" "title2-4 title2-4" ". ." "label5 input5";
+}
+ .title1-2 {
+	 grid-area: title1-2;
+	 display: block;
+	 text-align: center;
+	 font-size: 2rem;
+	 font-weight: 600;
+	 margin-bottom: 1rem;
+	 border-bottom: gray 0.1rem solid;
+}
+ .title2-1 {
+	 grid-area: title2-1;
+	 text-align: center;
+	 align-self: start;
+	 font-size: 1.5rem;
+	 margin-bottom: 1rem;
+	 border-bottom: gray 0.1rem solid;
+}
+ .title2-2 {
+	 grid-area: title2-2;
+	 text-align: center;
+	 align-self: start;
+	 font-size: 1.5rem;
+	 margin-bottom: 1rem;
+	 border-bottom: gray 0.1rem solid;
+}
+ .title2-3 {
+	 grid-area: title2-3;
+	 text-align: center;
+	 align-self: start;
+	 font-size: 1.5rem;
+	 margin-bottom: 1rem;
+	 border-bottom: gray 0.1rem solid;
+}
+ .title2-4 {
+	 grid-area: title2-4;
+	 text-align: center;
+	 align-self: start;
+	 font-size: 1.5rem;
+	 margin-bottom: 1rem;
+	 border-bottom: gray 0.1rem solid;
+}
+ .label2 {
+	 grid-area: label2;
+}
+ .label2 label {
+	 font-size: 1.1rem;
+	 display: inline-block;
+	 margin-left: 8rem;
+	 margin-bottom: 2rem;
+}
+ .label3 {
+	 grid-area: label3;
+}
+ .label3 label {
+	 font-size: 1.1rem;
+	 display: inline-block;
+	 margin-left: 8rem;
+	 margin-bottom: 2rem;
+}
+ .label4 {
+	 grid-area: label4;
+}
+ .label4 label {
+	 font-size: 1.1rem;
+	 display: inline-block;
+	 margin-left: 8rem;
+	 margin-bottom: 2rem;
+}
+ .label5 {
+	 grid-area: label5;
+}
+ .label5 label {
+	 font-size: 1.1rem;
+	 display: inline-block;
+	 margin-left: 8rem;
+	 margin-bottom: 2rem;
+}
+ .input2 {
+	 grid-area: input2;
+}
+ .input2 input {
+	 display: inline-block;
+	 margin-left: 4rem;
+	 margin-bottom: 2.2rem;
+	 border-top: white 0rem solid;
+	 border-left: white 0rem solid;
+	 border-right: white 0rem solid;
+	 border-bottom: gray 0.1rem solid;
+	 color: black;
+}
+ .input2 label {
+	 font-size: 0.9rem;
+}
+ .input3 {
+	 grid-area: input3;
+}
+ .input3 input {
+	 display: inline-block;
+	 margin-left: 4rem;
+	 margin-bottom: 2.2rem;
+	 border-top: white 0rem solid;
+	 border-left: white 0rem solid;
+	 border-right: white 0rem solid;
+	 border-bottom: gray 0.1rem solid;
+	 color: black;
+}
+ .input3 label {
+	 font-size: 0.9rem;
+}
+ .input4 {
+	 grid-area: input4;
+}
+ .input4 input {
+	 display: inline-block;
+	 margin-left: 4rem;
+	 margin-bottom: 2.2rem;
+	 border-top: white 0rem solid;
+	 border-left: white 0rem solid;
+	 border-right: white 0rem solid;
+	 border-bottom: gray 0.1rem solid;
+	 color: black;
+}
+ .input4 label {
+	 font-size: 0.9rem;
+}
+ .input5 {
+	 grid-area: input5;
+}
+ .input5 input {
+	 display: inline-block;
+	 margin-left: 4rem;
+	 margin-bottom: 2.2rem;
+	 border-top: white 0rem solid;
+	 border-left: white 0rem solid;
+	 border-right: white 0rem solid;
+	 border-bottom: gray 0.1rem solid;
+	 color: black;
+}
+ .input5 label {
+	 font-size: 0.9rem;
+}
+ .apply-course-details {
+	 grid-area: apply-course-details;
+	 display: grid;
+	 grid-auto-columns: 1fr 2fr;
+	 grid-template-rows: 3rem 1fr;
+}
+ .title1-3 {
+	 grid-column: 0.3333333333;
+	 grid-row: 0.5;
+	 display: block;
+	 text-align: center;
+	 font-size: 2rem;
+	 font-weight: 600;
+	 margin-bottom: 1rem;
+	 border-bottom: gray 0.1rem solid;
+}
+ .label6 {
+	 grid-column: 0.5;
+	 grid-row: 0.6666666667;
+}
+ .label6 label {
+	 font-size: 1.1rem;
+	 display: inline-block;
+	 margin-left: 8rem;
+	 margin-bottom: 2rem;
+}
+ .input6 {
+	 grid-column: 0.6666666667;
+	 grid-row: 0.6666666667;
+}
+ .input6 input {
+	 display: inline-block;
+	 margin-left: 4rem;
+	 margin-bottom: 2.2rem;
+	 border-top: white 0rem solid;
+	 border-left: white 0rem solid;
+	 border-right: white 0rem solid;
+	 border-bottom: gray 0.1rem solid;
+	 color: black;
+}
+ .input6 label {
+	 font-size: 0.9rem;
+}
+ .save-details {
+	 grid-area: save-details;
+	 justify-self: center;
+}
+ .save-details1 {
+	 margin-right: 10rem;
+	 display: inline-block;
+	 text-decoration: none;
+	 font-size: 2rem;
+	 padding: 1rem 1rem;
+	 border-radius: 40%;
+	 color: white;
+	 background-color: #00005f;
+}
+ .save-details1:hover {
+	 transform: scale(1.2);
+	 box-shadow: black 0.2rem 0.2rem;
+}
+ .print-details {
+	 margin-left: 10rem;
+	 display: inline-block;
+	 text-decoration: none;
+	 font-size: 2rem;
+	 padding: 1rem 1rem;
+	 border-radius: 40%;
+	 color: white;
+	 background-color: #fdb225;
+}
+ .print-details:hover {
+	 transform: scale(1.2);
+	 box-shadow: black 0.2rem 0.2rem;
+}
+ 
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../main-page.html"><img src="img/icons/logo-b.svg" alt="logo"></a>
+        </div>
+        <div class="header-items">
+            <a href="#quicklook">Engineering</a>
+            <a href="#quicklook">Medical</a>
+            <a href="#quicklook">Business</a>
+            <a href="#quicklook">Law</a>
+            <a href="#quicklook">Design</a>
+            <a href="#quicklook">Science</a>
+        </div>
+    </header>
+
+
+
+
+    <form action="" method="post">
+        <div class="application-form">
+            <div class="heading8">
+                <div>Application Form</div>
+                <p>This application form , which will be accepted in all the colleges , will also serve as 
+                    your resume. Good Luck!<br><b>(All fields are required)</b>
+                </p>
+            </div>
+    
+    
+    
+                <div class="student-details">
+                    <div class="title1-1">Student's Details</div><br>
+    
+                <div class="label1">
+                    <label for="name" >Name</label> <br>
+                <label for="dob">Date of Birth</label> <br>
+                <label for ="gender">Gender</label><br>
+                <label for ="email">E-Mail</label><br>
+                    
+                <label for="father_name">Father's Name</label> <br>
+                <label for="mother_name">Mother's Name</label> <br>
+                <label for="phone_no">Phone Number(N)</label> <br>
+                <label for="address">Address</label> <br>
+                <label for="pin">PINCODE(N)</label> <br>
+                </div>
+    
+                <div class="input1">
+                    <input type="text" name="name" id="name"><br>
+                <input type="text" name="dob" id="dob" placeholder="dd/mm/yyyy"><br>
+                <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>
+                <input type="text" name="email" id="email" placeholder="abc@xyz.com"><br>
+                <input type="text" name="father_name" id="father_name"><br>
+                <input type="text" name="mother_name" id="mother_name"><br>
+                <input type="text" name="phone_no" id="phone_no"><br>
+                <input type="text" name="address" id="address"><br>
+                <input type="text" name="pin" id="pin"><br>
+                </div>
+                </div>
+    
+    
+    
+                <div class="qualifications">
+                    <div class="title1-2">Previous Qualifications</div>
+                    <p class="title2-1">10th Standard</p>
+                    <div class="label2">
+                        <label>Board</label>  <br>      
+                        <label>School's Name and Address</label> <br>
+                        <label>CGPA(N)</label><br>
+                    </div>
+    
+                    <div class="input2">
+                        <input type="radio" id="cbse" name="board_10" value="cbse">
+                            <label for="cbse">CBSE</label>
+                            <input type="radio" id="CISCE" name="board_10" value="CISCE">
+                            <label for="CISCE">CISCE</label>
+                            <input type="radio" id="IB" name="board_10" value="IB">
+                            <label for="IB">IB</label>
+                            <input type="radio" id="IGCSE" name="board_10" value="IGCSE">
+                            <label for="IGCSE">IGCSE</label>
+                            <input type="radio" id="SB" name="board_10" value="SB">
+                            <label for="SB">State Board</label><br>
+                        <input type="text" name="school_name_10" id=""><br>
+                        <input type="text" name="cgpa_10" id=""><br>
+                    </div>
+    
+    
+    
+    
+                    <p class="title2-2">12th Standard</p>
+                    
+                    <div class="label3">
+                        <label>Board</label><br>
+                        <label>School's Name and Address</label> <br>
+                        <label>CGPA(N)</label><br>
+                    </div>
+    
+                    <div class="input3">
+                        <input type="radio" id="cbse" name="board_12" value="cbse">
+                            <label for="cbse">CBSE</label>
+                            <input type="radio" id="CISCE" name="board_12" value="CISCE">
+                            <label for="CISCE">CISCE</label>
+                            <input type="radio" id="IB" name="board_12" value="IB">
+                            <label for="IB">IB</label>
+                            <input type="radio" id="IGCSE" name="board_12" value="IGCSE">
+                            <label for="IGCSE">IGCSE</label>
+                            <input type="radio" id="SB" name="board_12" value="SB">
+                            <label for="SB">State Board</label><br>
+                        <input type="text" name="school_name_12" id=""><br>
+                        <input type="text" name="cgpa_12" id=""><br>
+                    </div>
+    
+    
+    
+    
+                    <p class="title2-3">UnderGraduation(if done)</p><br>
+                    
+                    <div class="label4">
+                        <label>Course Name</label> <br>
+                    <label>College's Name and Address</label> <br>
+                    <label>CGPA(N)</label><br>
+                    </div>
+    
+                    <div class="input4">
+                        <input type="text" name="course_name_ug" id=""><br>
+                    <input type="text" name="clg_name_ug" id=""><br>
+                    <input type="text" name="cgpa_ug" id=""><br>
+                    </div>
+    
+    
+    
+                    <p class="title2-4">PostGraduation(if done)</p><br>
+                    
+                    <div class="label5">
+                        <label>Course Name</label> <br>
+                    <label>College's Name and Address</label> <br>
+                    <label>CGPA(N)</label><br>
+                    </div>
+    
+                    
+                    <div class="input5">
+                        <input type="text" name="course_name_pg" id=""><br>
+                    <input type="text" name="clg_name_pg" id=""><br>
+                    <input type="text" name="cgpa_pg" id=""><br>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="apply-course-details">
+                    <div class="title1-3">Current Course Admission</div>
+                    
+                        <div class="label6">
+                            <label>College Name</label> <br>
+                            <label>Field Name</label> <br>
+                            <label>Course Name</label> <br>
+                            <label>Year</label>
+                        </div>
+    
+                        <div class="input6">
+                                     <input type="text" name="clg_name" id=""><br>
+                                     <input type="text" name="field_name" id=""><br>
+                                     <input type="text" name="course_name" id=""><br>
+                                     <input type="radio" id="1st_year" name="year" value="1st_year">
+                                     <label for="1st_year">1st</label>
+                                     <input type="radio" id="LEET" name="year" value="LEET">
+                                    <label for="LEET">2nd(LEET)</label>
+                                    <input type="radio" id="transfer" name="year" value="transfer">
+                                    <label for="transfer">Transfer</label><br>
+                        </div>
+    
+                </div>
+    
+                <div class="save-details">
+                    <button class="save-details1">Save</button>
+                </div>
+    
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+$main1: rgb(0, 61, 0);
+$main2: rgb(0, 0, 95);
+$main3: rgb(97, 97, 97);
+$main4:rgb(39, 39, 39);
+$main5: rgb(223, 150, 14);
+
+
+$bgcolor1: rgba(41, 41, 41, 0.589);
+$bgcolor2:rgb(253, 178, 37);
+$bgcolor3:  rgb(219, 218, 218);
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem=10px
+    overflow-x: hidden;
+    //position: relative;
+}
+
+h1{
+    font-size: 3.5rem;
+    text-align: center;
+    color: $main2;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: $main1;
+}
+
+h4{
+    font-size: 2.5rem;
+    text-align: center;
+    color: $main1;
+}

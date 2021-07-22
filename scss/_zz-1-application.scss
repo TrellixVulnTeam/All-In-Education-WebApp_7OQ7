@@ -1,0 +1,395 @@
+// .application-form{
+//     height: 300vh;
+//     width: 100vw;
+//     border: 1rem double solid;
+//     display: grid;
+//     grid-template-columns:5rem 2fr 1fr 5rem;
+//     grid-template-rows: 3.5rem 5rem 4rem 1fr 3rem 2fr 3rem 1fr 5rem 8rem;
+//     grid-template-areas: 
+//                          ". . . ."
+//                          ". heading8 heading8 ."
+//                          ". . . ."
+//                          ". student-details student-details ."
+//                          ". . . ."
+//                          ". qualifications qualifications ."
+//                          ". . . ."
+//                          ". apply-course-details apply-course-details ."
+//                          ". . . ."
+//                          ". save-details save-details ."
+//                          ". . . .";
+// }
+
+
+// .heading8{
+//     grid-area: heading8;
+
+
+//     div{
+//         font-size: 3rem;
+//         color: $main2;
+//         text-align: center;
+//     }
+//     p{
+//         font-size: 1.2rem;
+//         text-align: center;
+//         color: $main3;
+//         padding-bottom: 1rem;
+//         border-bottom: gray .1rem solid;
+//     }
+// }
+
+// .student-details{
+//     grid-area: student-details;
+//     width: 100%;
+//     display: grid;
+//     grid-template-columns: 1fr 2fr;
+//     grid-template-rows: 3rem 1fr;
+//     grid-template-areas:"title1-1 title1-1" 
+//                         "label1 input1";
+
+
+
+//     input{
+//         border-top: white 0rem solid;
+//         border-left: white 0rem solid;
+//         border-right: white 0rem solid;
+//         border-bottom: gray .1rem solid;
+//         color: black;
+//     }
+// }
+
+// .title1-1{
+//     grid-area: title1-1;
+//     display: block;
+//         text-align: center;
+//         font-size: 2rem;
+//         font-weight: 600;
+//         margin-bottom: 1rem;
+//         border-bottom: gray .1rem solid;
+// }
+
+// .label1{
+//     grid-area: label1;
+    
+//     label{
+//         font-size: 1.1rem;
+//         display: inline-block;
+//         margin-left: 8rem;
+//        // margin-right: 10%;
+//         margin-bottom: 2rem;
+//     }
+// }
+
+// .input1{
+//     grid-area: input1;
+
+//     input{
+//         display: inline-block;
+//         margin-left: 4rem;
+//        // margin-right: 10%;
+//         margin-bottom: 2.2rem;
+//     }
+
+//     label{
+//         font-size: 1rem;
+//     }
+// }
+
+
+
+
+
+// .qualifications{
+//     grid-area: qualifications;
+//     display: grid;
+//     grid-template-columns: 1fr 2fr;
+//     grid-template-rows: 3rem 3rem 3rem 2rem 1fr 3rem 2rem 1fr 3rem 2rem 1fr 3rem 2rem 1fr;
+//     grid-template-areas: 
+//                             ". ."
+//                             "title1-2 title1-2"
+//                             "title2-1 title2-1"
+//                             ". ."
+//                             "label2 input2"
+//                             "title2-2 title2-2"
+//                             ". ."
+//                             "label3 input3"
+//                             "title2-3 title2-3"
+//                             ". ."
+//                             "label4 input4"
+//                             "title2-4 title2-4"
+//                             ". ."
+//                             "label5 input5";
+// }
+
+
+// .title1-2{
+//     grid-area: title1-2;
+//     display: block;
+//         text-align: center;
+//         font-size: 2rem;
+//         font-weight: 600;
+//         margin-bottom: 1rem;
+//         border-bottom: gray .1rem solid;
+// }
+
+// .title2{
+    
+//     &-1{
+//         grid-area: title2-1;
+//         text-align: center;
+//         align-self: start;
+//         font-size: 1.5rem;
+//         margin-bottom: 1rem;
+//         border-bottom: gray .1rem solid;
+//     }
+
+//     &-2{
+//         grid-area: title2-2;
+//         text-align: center;
+//         align-self: start;
+//         font-size: 1.5rem;
+//         margin-bottom: 1rem;
+//         border-bottom: gray .1rem solid;
+//     }
+
+//     &-3{
+//         grid-area: title2-3;
+//         text-align: center;
+//         align-self: start;
+//         font-size: 1.5rem;
+//         margin-bottom: 1rem;
+//         border-bottom: gray .1rem solid;
+//     }
+
+//     &-4{
+//         grid-area: title2-4;
+//         text-align: center;
+//         align-self: start;
+//         font-size: 1.5rem;
+//         margin-bottom: 1rem;
+//         border-bottom: gray .1rem solid;
+//     }
+// }
+
+
+// .label{
+//     &2{
+//         grid-area: label2;
+//         label{
+//             font-size: 1.1rem;
+//             display: inline-block;
+//             margin-left: 8rem;
+//            // margin-right: 10%;
+//             margin-bottom: 2rem;
+//         }
+//     }
+
+//     &3{
+//         grid-area: label3;
+//         label{
+//             font-size: 1.1rem;
+//             display: inline-block;
+//             margin-left: 8rem;
+//            // margin-right: 10%;
+//             margin-bottom: 2rem;
+//         }
+//     }
+
+//     &4{
+//         grid-area: label4;
+//         label{
+//             font-size: 1.1rem;
+//             display: inline-block;
+//             margin-left: 8rem;
+//            // margin-right: 10%;
+//             margin-bottom: 2rem;
+//         }
+//     }
+
+//     &5{
+//         grid-area: label5;
+//         label{
+//             font-size: 1.1rem;
+//             display: inline-block;
+//             margin-left: 8rem;
+//            // margin-right: 10%;
+//             margin-bottom: 2rem;
+//         }
+//     }
+// }
+
+
+// .input{
+//     &2{
+//         grid-area: input2;
+
+//         input{
+//             display: inline-block;
+//             margin-left: 4rem;
+//            // margin-right: 10%;
+//             margin-bottom: 2.2rem;
+//             border-top: white 0rem solid;
+//         border-left: white 0rem solid;
+//         border-right: white 0rem solid;
+//         border-bottom: gray .1rem solid;
+//         color: black;
+//         }
+    
+//         label{
+//             font-size: .9rem;
+//         }
+//     }
+//     &3{
+//         grid-area: input3;
+
+//         input{
+//             display: inline-block;
+//             margin-left: 4rem;
+//            // margin-right: 10%;
+//             margin-bottom: 2.2rem;
+//             border-top: white 0rem solid;
+//         border-left: white 0rem solid;
+//         border-right: white 0rem solid;
+//         border-bottom: gray .1rem solid;
+//         color: black;
+//         }
+    
+//         label{
+//             font-size: .9rem;
+//         }
+//     }
+//     &4{
+//         grid-area: input4;
+
+//         input{
+//             display: inline-block;
+//             margin-left: 4rem;
+//            // margin-right: 10%;
+//             margin-bottom: 2.2rem;
+//             border-top: white 0rem solid;
+//         border-left: white 0rem solid;
+//         border-right: white 0rem solid;
+//         border-bottom: gray .1rem solid;
+//         color: black;
+//         }
+    
+//         label{
+//             font-size: .9rem;
+//         }
+//     }
+//     &5{
+//         grid-area: input5;
+
+//         input{
+//             display: inline-block;
+//             margin-left: 4rem;
+//            // margin-right: 10%;
+//             margin-bottom: 2.2rem;
+//             border-top: white 0rem solid;
+//         border-left: white 0rem solid;
+//         border-right: white 0rem solid;
+//         border-bottom: gray .1rem solid;
+//         color: black;
+//         }
+    
+//         label{
+//             font-size: .9rem;
+//         }
+//     }
+// }
+
+
+
+
+
+
+// .apply-course-details{
+//     grid-area: apply-course-details;
+//     display: grid;
+//     grid-auto-columns: 1fr 2fr;
+//     grid-template-rows: 3rem 1fr;
+
+// }
+
+// .title1-3{
+//     grid-column: 1/3;
+//     grid-row: 1/2;
+//     display: block;
+//         text-align: center;
+//         font-size: 2rem;
+//         font-weight: 600;
+//         margin-bottom: 1rem;
+//         border-bottom: gray .1rem solid;
+// }
+
+
+// .label6{
+//     grid-column: 1/2;
+//     grid-row: 2/3;
+
+//     label{
+//         font-size: 1.1rem;
+//         display: inline-block;
+//         margin-left: 8rem;
+//        // margin-right: 10%;
+//         margin-bottom: 2rem;
+//     }
+// }
+
+// .input6{
+//     grid-column: 2/3;
+//     grid-row: 2/3;
+
+//     input{
+//         display: inline-block;
+//         margin-left: 4rem;
+//        // margin-right: 10%;
+//         margin-bottom: 2.2rem;
+//         border-top: white 0rem solid;
+//     border-left: white 0rem solid;
+//     border-right: white 0rem solid;
+//     border-bottom: gray .1rem solid;
+//     color: black;
+//     }
+
+//     label{
+//         font-size: .9rem;
+//     }
+// }
+
+// .save-details{
+//     grid-area: save-details;
+//     justify-self: center;
+// }
+
+// .save-details1{
+//     margin-right: 10rem;
+//     display: inline-block;
+//         text-decoration: none;
+//         font-size: 2rem;
+//         padding: 1rem 1rem;
+//         border-radius: 40%;
+//         color: white;
+//         background-color: $main2;
+
+//         &:hover{
+//             transform: scale(1.2);
+//             box-shadow: black .2rem .2rem;
+//         }
+// }
+
+// .print-details{
+//     margin-left: 10rem;
+//     display: inline-block;
+//         text-decoration: none;
+//         font-size: 2rem;
+//         padding: 1rem 1rem;
+//         border-radius: 40%;
+//     color: white;
+//     background-color: rgb(253, 178, 37);
+
+//     &:hover{
+//         transform: scale(1.2);
+//         box-shadow: black .2rem .2rem;
+//     }
+// }
